@@ -1,0 +1,43 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply a white background to the body */
+body {
+    background-color: white;
+}
+
+/* Style the header with a blue background and white text */
+.header {
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+/* Style the legend with blue text */
+legend {
+    color: #3498db;
+}
+
+/* Style the radio buttons with blue text */
+.form__radio {
+    color: #3498db;
+}
+
+/* Style the "Buy Now" button with blue background and white text */
+.button {
+    background-color: #3498db;
+    color: white;
+}
+
+/* Style the "Buy Now" button when hovering over it */
+.button:hover {
+    background-color: #2980b9;
+}
+/* Style for the payment option images */
+
+

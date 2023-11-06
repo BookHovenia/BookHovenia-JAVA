@@ -1,0 +1,120 @@
+/* Add animation properties to book-images */
+.book-images {
+    margin-top: 50px;
+    overflow: hidden; /* Hide overflow for the sliding effect */
+    white-space: nowrap;
+}
+
+.book-images img {
+    width: 200px;
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+    display: inline-block;
+    transition: transform 0.5s ease-in-out; /* Add sliding animation */
+}
+
+/* Add a class for hover effect on book images */
+.book-images img:hover {
+    transform: scale(1.1);
+}
+
+/* Create keyframes for sliding animation */
+@keyframes slide {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-200px); }
+    40% { transform: translateX(-400px); }
+    60% { transform: translateX(-600px); }
+    80% { transform: translateX(-800px); }
+    100% { transform: translateX(0); }
+}
+
+/* Apply sliding animation to book images */
+.book-images img {
+    animation: slide 10s infinite;
+}
+
+/* Add a class for the button icons */
+.button i {
+    margin-right: 5px;
+}
+
+/* Style the button icons */
+.button i {
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+/* Retain previous styles for the turquoise theme and navbar */
+body {
+    background-color: turquoise;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: white;
+    padding: 10px 0;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+h1 {
+    display: inline;
+    color: turquoise;
+}
+.button {
+    display: inline-block;
+    padding: 15px 20px; /* Adjust padding for spacing */
+    margin: 10px;
+    background-color: turquoise;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+/* Add styling for the second slider */
+.large-slider {
+    margin-top: 50px;
+    overflow: hidden; /* Hide overflow for the sliding effect */
+    white-space: nowrap;
+}
+
+.large-slider img {
+    width: 200px;
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+    display: inline-block;
+    transition: transform 0.5s ease-in-out; /* Add sliding animation */
+}
+
+/* Create keyframes for the second slider's sliding animation */
+@keyframes slide-large {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-220px); }
+    40% { transform: translateX(-440px); }
+    60% { transform: translateX(-660px); }
+    80% { transform: translateX(-880px); }
+    100% { transform: translateX(0); }
+}
+
+/* Apply sliding animation to the second slider's book images */
+.large-slider img {
+    animation: slide-large 10s infinite;
+}
+
